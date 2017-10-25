@@ -60,8 +60,15 @@
   //[ 'a', 'b' ]
   ```
 
-  - indexOf()
-  - join(separator) : 배열 요소 전체에 toString()을 적용해 문자열로 바꾸고 그 사이에 separator를 끼워 넣어 만든 문자열에 반환합니다. separator를 생략하면 기본값은 ','입니다.
+  - indexOf(*searchValue*, *startIndex*) : *startIndex*에서 시작해 *searchValue*를 찾습니다. 찾은 것이 있으면 첫번째 인덱스를 없으면 -1을 반환합니다. *startIndex*가 음수면 배열 길이를 더하고, 생략하면 전체 배열을 검색합니다.
+   ```js
+   >[ 3, 1, 17 ,1, 4 ].indexOf(1)
+   //1
+   > [3, 1, 17, 1, 4 ].indexOf(1, 2)
+   //3
+   ```
+
+  - join(*separator*) : 배열 요소 전체에 toString()을 적용해 문자열로 바꾸고 그 사이에 *separator*를 끼워 넣어 만든 문자열에 반환합니다. *separator*를 생략하면 기본값은 ','입니다.
   ```js
   > [3, 4, 5].join('-')
   // '3-4-5'
@@ -71,10 +78,10 @@
   //'345'
 
   > [undefined, null] join('#') // undefined와 null을 빈 문자열로 바꿉니다.
-  // '#'
+  //'#'
 
   > ['a',,'b'].join('-') // 배열에 있는 구멍도 빈 문자열로 바뀝니다.
-  // 'a--b'
+  //'a--b'
   ```
 
   - pop() : 배열에서 마지막 요소를 제거하고 그 요소를 반환합니다.
