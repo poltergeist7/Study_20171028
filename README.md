@@ -84,7 +84,7 @@
   > var arr= [ 'a', 'b', 'c' ];
   ```
   - sort()
-  - splice( *start*, deleteCount, elem1, elem2, ...) : start
+  - splice( *start*, *deleteCount*, *elem1*, **elem2**, ...) : start
   - unshift() : 지정된 요소를 배열 맨 앞에 추가하고 새 길이를 반환합니다.
   ```
   > var arr = ['c', 'd'];
