@@ -12,7 +12,7 @@
   - length : 문자열 개수
   - charAt(n)
   - charCodeAt(n)
-  - concat(
+  - concat()
   - indexOf(substr)
   - lastIndexOf(substr)
   - match(reg)
@@ -28,3 +28,16 @@
  ```
  function () {}
  ```
+
+숫자 (Number)
+  - concat()
+  - indexOf()
+  - join()
+  - pop()
+  - push()
+  - reverse()
+  - shift()
+  - slice()
+  - sort()
+  - splice()
+  - unshift()
