@@ -7,7 +7,7 @@
     - 숫자 (Number)
     - 배열 (Array)
 
-문자 (String)
+## 문자 (String)
   - length : 문자열 개수
   - charAt(n)
   - charCodeAt(n)
@@ -28,7 +28,7 @@
  function () {}
  ```
 
-숫자 (Number)
+## 숫자 (Number)
   - Number()
   - inNaN()
   - parseInt()
@@ -37,7 +37,7 @@
   - .toString()
 
 
-배열 (Array)
+## 배열 (Array)
   - concat()
   - indexOf()
   - join()
