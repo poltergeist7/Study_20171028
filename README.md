@@ -5,7 +5,6 @@
 - 코어함수
     - 문자 (String)
     - 숫자 (Number)
-    - 객체 (Object)
     - 배열 (Array)
 
 문자 (String)
@@ -30,6 +29,15 @@
  ```
 
 숫자 (Number)
+  - Number()
+  - inNaN()
+  - parseInt()
+  - parseFloat()
+  - .toFixed()
+  - .toString()
+
+
+배열 (Array)
   - concat()
   - indexOf()
   - join()
