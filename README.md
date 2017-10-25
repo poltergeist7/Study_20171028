@@ -54,28 +54,43 @@
   - concat()
   - indexOf()
   - join()
-  - pop()
-  - push()
+  - pop() : 배열에서 마지막 요소를 제거하고 그 요소를 반환합니다.
+  ```
+  > var arr = [ 'a', 'b' ];
+  > arr.pop()
+  //'b'
+  > arr
+  //[ 'a' ]
+  //
+  ```
+  - push() : 배열에 지정되 뇽소를 추가하고 새 길이를 반환합니다.
+  ```
+  > var arr = [ 'a', 'b' ];
+  > arr push('c', 'd')
+  //4
+  > arr
+  // [ 'a', 'b', 'c', 'd' ]
+  ```
   - reverse()
   - shift() : 인덱스 0에 있는 요소를 제거하고 그 요소를 반환합니다. 이어지는 요소의 인덱스는 1씩 줄어듭니다.
   ```
-  var arr = ['a', 'b'];
-  arr.shift()
+  > var arr = [ 'a', 'b' ];
+  > arr.shift()
   //'a'
-  arr
+  > arr
   //['b']
   ```
   - slice()
   ```
-  var arr= ['a', 'b', 'c'];
+  > var arr= [ 'a', 'b', 'c' ];
   ```
   - sort()
   - splice()
   - unshift() : 지정된 요소를 배열 맨 앞에 추가하고 새 길이를 반환합니다.
   ```
-  var arr = ['c', 'd'];
-  arr.unshift('a', 'b')
+  > var arr = ['c', 'd'];
+  > arr.unshift('a', 'b')
   //4
-  arr
+  > arr
   //['a', 'b', 'c', 'd']
   ```
