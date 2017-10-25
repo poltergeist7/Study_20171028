@@ -38,14 +38,44 @@
 
 
 ## 배열 (Array)
+  - length :배열 요소의 숫자를 반환. 배열에 삽입하거나 제거할 수 있다.
+  ```
+  var arr['a', 'b'];
+  arr.length
+  //2
+
+  arr[arr.length] = 'c'
+  arr
+  //['a', 'b', 'c']
+  arr.length = 1;
+  arr
+  ['a']
+  ```
   - concat()
   - indexOf()
   - join()
   - pop()
   - push()
   - reverse()
-  - shift()
+  - shift() : 인덱스 0에 있는 요소를 제거하고 그 요소를 반환합니다. 이어지는 요소의 인덱스는 1씩 줄어듭니다.
+  ```
+  var arr = ['a', 'b'];
+  arr.shift()
+  //'a'
+  arr
+  //['b']
+  ```
   - slice()
+  ```
+  var arr= ['a', 'b', 'c'];
+  ```
   - sort()
   - splice()
-  - unshift()
+  - unshift() : 지정된 요소를 배열 맨 앞에 추가하고 새 길이를 반환합니다.
+  ```
+  var arr = ['c', 'd'];
+  arr.unshift('a', 'b')
+  //4
+  arr
+  //['a', 'b', 'c', 'd']
+  ```
