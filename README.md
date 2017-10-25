@@ -84,7 +84,14 @@
   > var arr= [ 'a', 'b', 'c' ];
   ```
   - sort()
-  - splice( *start*, *deleteCount*, *elem1*, **elem2**, ...) : start
+  - splice( *start*, *deleteCount*, *elem1*, *elem2*, ...) : *start* 에서 시작해 *deleteCount* 만큼 제거한 후 지정된 요소를 삽입합니다. ## *start* 위치에 있는 요소를 elem1으로, 그 다음 요소를 elem2로, 이런 식으로 deleteCount 만큼 교체합니다. 이 메서드는 제거된 요소를 반환합니다.
+  ```
+  > var arr = [ 'a', 'b', 'c', 'd'];
+  > arr.splice(1, 2, 'x');
+  //[ 'b', 'c' ]
+  > arr
+  //[ 'a', 'x', 'd']
+  ```
   - unshift() : 지정된 요소를 배열 맨 앞에 추가하고 새 길이를 반환합니다.
   ```
   > var arr = ['c', 'd'];
