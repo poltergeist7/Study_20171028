@@ -22,7 +22,12 @@
   ```
   > charCodeAt()의 역은 String.fromCharCode()입니다.
 
-  - concat()
+  - concat(*str1*, *str2*, ...) : 원래 문자열에 *str1*, *str2* 등을 병합하여 반환합니다.
+  ```js
+  > 'hello'.concat(' ', 'world', '!')
+  // 'hello world!'
+  ```
+
   - indexOf(substr)
   - lastIndexOf(substr)
   - match(reg)
@@ -42,22 +47,26 @@
   > *separator* : 문자열 또는 정규표현식으로, 생략하면 전체 문자열을 배열 형태로 반환합니다.  <br>
   > *limit* : 반환할 배열의 최대 길이입니다.
   ```js
-  > 'a, b,c, d'.split(',')     // 문자열
+  > 'a, b,c, d'.split(',')          // 문자열
   //[ 'a', ' b', 'c', ' d' ]
-  > 'a, b,c, d'.split(/,/)     // 정규표현식
+  > 'a, b,c, d'.split(/,/)          // 정규표현식
   //[ 'a', ' b', 'c', ' d' ]
-  > 'a, b,c, d'.split(/,*/)    // 좀 더 복잡한 정규표현식
+  > 'a, b,c, d'.split(/, */)        // 좀 더 복잡한 정규표현식
   //[ 'a', 'b', 'c', 'd' ]
-
+  > 'a, b,c, d'.split(/, */, 2)     // 제한 설정
+  //[ 'a', 'b']
+  > 'test'.split()                  // 구분자 없음
+  // [ 'test' ]
   ```
 
   - substr(start[,count])
   - toLowerCase()
   - toUpperCase()
-  - trim()
-
- ```
- function () {}
+  - trim() : 문자열의 앞뒤 공백을 제거합니다.
+ ```js
+ > var str = '  Mango   ';
+ > var newStr = str.trim();
+ // 'mango'
  ```
 
 ## 숫자 (Number)
