@@ -9,7 +9,7 @@
 
 ## 문자 (String)
   - length : 문자열 개수
-  - charAt(n)
+  ### charAt(n) :
   - charCodeAt(n)
   - concat()
   - indexOf(substr)
