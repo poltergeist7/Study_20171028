@@ -109,7 +109,7 @@
   - toLowerCase() : 원래 문자열의 문자를 모두 소문자로 바꾼 새 문자열을 반환합니다.
   ```js
   > 'HELLO'.toLowerCase()
-  // ''hello
+  // 'hello'
   ```
 
   - toUpperCase() : 원래 문자열의 문자를 모두 대문자로 바꾼 새 문자열을 반환합니다.
