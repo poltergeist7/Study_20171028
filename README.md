@@ -9,16 +9,48 @@
 
 ## 문자 (String)
   - length : 문자열 개수
-  ### charAt(n) :
-  - charCodeAt(n)
+  - charAt(n) : n번째에 있는 문자를 구합니다
+  ```js
+  > 'abc'.charAt(1)
+  //'b'
+  ```
+  - charCodeAt(n) : n번째에 해당되는 문자값의 유니코드를 반환합니다.
+  ```js
+  > var str = "HELLO WORLD";
+  > var n = str.charCodeAt(0);
+  // 72  // H의 유니코드값 72를 반환
+  ```
+  > charCodeAt()의 역은 String.fromCharCode()입니다.
+
   - concat()
   - indexOf(substr)
   - lastIndexOf(substr)
   - match(reg)
   - replace(reg,rep)
   - search(reg)
-  - slice(srt)
-  - split(str)
+  - slice(*start*, *end*) : *start* 위치에서 싲가하고 *end* 바로 앞에서 끝나는 부분 문자열을 반환합니다. 두 매개변수 모두 음수를 쓸 수 있으며, 음수를 쓰면 문자열 길이가 매개변수에 더해집니다.
+   ```js
+   > 'abc'.slice(2)
+   //'2'
+   > 'abc'.slice(1,2)
+   //'b'
+   > 'abc'.slice(-2)
+   //'bc'
+   ```
+
+  - split(*separator*,*limit*) : *separator*로 구분한 배열을 반환하며, 매개변수는 다음 2가지입니다.
+  > *separator* : 문자열 또는 정규표현식으로, 생략하면 전체 문자열을 배열 형태로 반환합니다.
+  > *limit* : 반환할 배열의 최대 길이입니다.
+  ```js
+  > 'a, b,c, d'.split(',')     // 문자열
+  //[ 'a', ' b', 'c', ' d' ]
+  > 'a, b,c, d'.split(/,/)     // 정규표현식
+  //[ 'a', ' b', 'c', ' d' ]
+  > 'a, b,c, d'.split(/,*/)    // 좀 더 복잡한 정규표현식
+  //[ 'a', 'b', 'c', 'd' ]
+
+  ```
+
   - substr(start[,count])
   - toLowerCase()
   - toUpperCase()
