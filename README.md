@@ -50,12 +50,23 @@
   ```
   /g 플래그가 있으면 일치하는 것을 모두 배열에 담아 반환합니다.
   ```js
-  > '-abb--aaab-'.match(/(a+)b/g)
-  [ 'ab', 'aaab']
+  > '-abb--aaab-'.match(/(a+)b/)
+  [ 'ab',
+  'a',
+  index: 1,
+  input: '-abb--aaab-' ]
+  > 'abba'.match(/a/g)
+  // ['a', 'a']
   > 'abba'.match(/x/g)      //일치하는 것이 없을 시
   // null
   ```
-  - replace(reg,rep)
+
+  - replace(*search*, *replacement*) : *search*를 찾아 *replacement*로 교체합니다. *search*에는 문자열이나 정규표현식을 쓸 수 있고, *replacement*에는 문자열이나 함수를 쓸 수 있습니다. *search*에 /g 플래그가 없는 정규표현식을 쓰면 일치하는 첫 번째 것만 교체됩니다.
+  ```js
+  > 'iixxxixx'.replace('i', 'o')
+  // 'o/g/gixxixx'
+
+  ```
   - search(*regexp*) : *regexp*와 일치하는 부분이 있으면 그 첫 번째의 인덱스를, 없으면 -1을 변환합니다.
   ```js
   > 'abba'.search(/b/)
