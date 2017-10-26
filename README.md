@@ -28,8 +28,22 @@
   // 'hello world!'
   ```
 
-  - indexOf(substr)
-  - lastIndexOf(substr)
+  - indexOf(*serchString*, *position*) : *position*(Zero-based)에서 시작해 *searchString*을 찾으면 그 위치를, 찾지 못하면 -1을 반환합니다.
+  ```js
+  > 'aXaX'.indexOf('X')
+  // 1
+  > 'aXaX'.indexOf('X', 2)
+  // 3
+  ```
+
+  - lastIndexOf(*serchString*, *position*) : *position*(기본값은 문자열 끝)에서 시작해 *searchString*을 검색합니다. *searchString*을 찾으면 그 위치를, 찾지 못하면 -1을 반환합니다.
+  ```js
+  > 'aXaX'.lastIndexOf('X')
+  // 3
+  > 'aXaX'.lastIndexOf('X', 2)
+  // 1
+  ```
+  
   - match(reg)
   - replace(reg,rep)
   - search(reg)
@@ -60,13 +74,25 @@
   ```
 
   - substr(start[,count])
-  - toLowerCase()
-  - toUpperCase()
+
+
+  - toLowerCase() : 원래 문자열의 문자를 모두 소문자로 바꾼 새 문자열을 반환합니다.
+  ```js
+  > 'HELLO'.toLowerCase()
+  // ''hello
+  ```
+
+  - toUpperCase() : 원래 문자열의 문자를 모두 대문자로 바꾼 새 문자열을 반환합니다.
+   ```js
+   > 'hello'.toUpperCase()
+   // 'HELLO'
+   ```
+
   - trim() : 문자열의 앞뒤 공백을 제거합니다.
  ```js
  > var str = '  Mango   ';
  > var newStr = str.trim();
- // 'mango'
+ // 'Mango'
  ```
 
 ## 숫자 (Number)
