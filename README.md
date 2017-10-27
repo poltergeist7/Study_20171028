@@ -4,7 +4,6 @@
   - 배열 (Array)
 
 ## 문자 (String)
-  - length : 문자열 개수
   - charAt(n) : n번째에 있는 문자를 구합니다
   ```js
   > 'abc'.charAt(1)
@@ -164,19 +163,6 @@
 
 
 ## 배열 (Array)
-  - length :배열 요소의 숫자를 반환. 배열에 삽입하거나 제거할 수 있다.
-  ```js
-  var arr['a', 'b'];
-  arr.length
-  //2
-
-  arr[arr.length] = 'c'
-  arr
-  //['a', 'b', 'c']
-  arr.length = 1;
-  arr
-  ['a']
-  ```
   - concat(*arr1*, *arr2*, ...): 수신자의 모든 요소 다음에 *arr1*의 모든 요소, 다음에 arr2의 모든 요소, 이런식으로 이어지는 새 배열을 만듭니다. 매개변수가 배열이 아니면 요소로 추가됩니다.
   ```js
   > var arr = [ 'a', 'b' ];
