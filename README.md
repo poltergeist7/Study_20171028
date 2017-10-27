@@ -96,8 +96,23 @@
 
 ## 숫자 (Number)
   - Number()
-  - inNaN()
-  - parseInt()
+  - inNaN() : 값이 잘못된 숫자인지 판별합니다.
+  ```js
+  > isNaN(NaN);
+  // true
+  > isNaN(33);
+  // false
+  > isNaN('33');
+  // false
+  > isNaN(true);
+  // false
+  ```
+  - parseInt() : 문자를 해석하여 정수로 반환합니다.
+  ```js
+  > parseInt(1);
+  // 1
+  >
+  ```
   - parseFloat()
   - .toFixed() : 숫자에 소숫점 자리를 지정합니다.
   ```js
