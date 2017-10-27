@@ -103,7 +103,7 @@
   // 123
   > Number(false)
   // 0
-  >Number(true)
+  > Number(true)
   // 1
   ```
   - inNaN() : 값이 잘못된 숫자인지 판별합니다.
