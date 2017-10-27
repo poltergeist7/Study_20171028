@@ -55,7 +55,7 @@
   - slice(*start*, *end*) : *start* 위치에서 시작하고 *end* 바로 앞에서 끝나는 부분 문자열을 반환합니다. 두 매개변수 모두 음수를 쓸 수 있으며, 음수를 쓰면 문자열 길이가 매개변수에 더해집니다.
    ```js
    > 'abc'.slice(2)
-   //'2'
+   //'c'
    > 'abc'.slice(1,2)
    //'b'
    > 'abc'.slice(-2)
@@ -99,8 +99,22 @@
   - inNaN()
   - parseInt()
   - parseFloat()
-  - .toFixed()
-  - .toString()
+  - .toFixed() : 숫자에 소숫점 자리를 지정합니다.
+  ```js
+  > var number = 0.12345678912345678.toFixed(2);
+  > console.log(number);
+  // '0.123'
+  > console.log(typeOf(number));
+  //'string'
+  ```
+  - .toString() : 숫자를 문자 데이터로 변환합니다.
+   ```js
+   > var str = 9876.6543.toString();
+   console.log(typeOf(str));
+   // 'string'
+   console.log(str);
+   // '9876.6543'
+   ```
 
 
 ## 배열 (Array)
