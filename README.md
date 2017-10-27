@@ -44,11 +44,12 @@
   // 1
   ```
 
-  - replace(*search*, *replacement*) : *search*를 찾아 *replacement*로 교체합니다. *search*에는 문자열이나 정규표현식을 쓸 수 있고, *replacement*에는 문자열이나 함수를 쓸 수 있습니다. *search*에 /g 플래그가 없는 정규표현식을 쓰면 일치하는 첫 번째 것만 교체됩니다.
+  - replace(*search*, *replacement*) : *search*를 찾아 *replacement*로 교체합니다. *search*에는 문자열이나 정규표현식을 쓸 수 있고, *replacement*에는 문자열이나 함수를 쓸 수 있습니다.
   ```js
-  > 'iixxxixx'.replace('i', 'o')
-  // 'o/g/gixxixx'
-
+  > var str = 'Apple Mango';
+  > var str2 = str.replacement('Apple', 'Lemon')
+  > console.log(str2);
+  // 'Lemon Mango'
   ```
 
   - slice(*start*, *end*) : *start* 위치에서 시작하고 *end* 바로 앞에서 끝나는 부분 문자열을 반환합니다. 두 매개변수 모두 음수를 쓸 수 있으며, 음수를 쓰면 문자열 길이가 매개변수에 더해집니다.
