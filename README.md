@@ -115,8 +115,8 @@
   // 23
   > parseInt('99.9%');
   // 99
-  > parseInt('169 cm');
-  // 169
+  > parseInt('168 cm');
+  // 168
   > parseInt('I amm 31');
   // NaN
   > parseInt(true);
@@ -125,7 +125,18 @@
   - parseFloat() : 문자열로 변환하고 앞 공백을 잘라낸 뒤, 앞에서부터 부동소수점 숫자로 볼 수 있는 만큼을 떼어 숫자로 바꿉니다. <br>
   부동소수점 숫자로 볼 수 있는 부분이 없으면 NaN을 반환합니다.
   ```js
-  
+  > parseInt(1);
+  // 1
+  > parseInt('23');
+  // 23
+  > parseInt('99.9%');
+  // 99.9
+  > parseInt('168.8 cm');
+  // 168.8
+  > parseInt('I amm 31');
+  // NaN
+  > parseInt(true);
+  // NaN
   ```
 
   - .toFixed() : 숫자에 소숫점 자리를 지정합니다.
