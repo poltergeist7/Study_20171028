@@ -67,8 +67,15 @@
   // [ 'test' ]
   ```
 
-  - substr(start[,count])
-
+  - substr(*start*,*length*) : *start* 위치에서 시작하여 가져올 *length*를 지정하며 그만큼의 문자열을 추출할 수 있습니다.
+  ```js
+  > var input = "abcdefg"
+  > var str = input.substr(0,2);
+  // "ab"
+  > var input = "abcdefg"
+  > var str = input.substr(2);
+  // "cdefg"                        // 두번째 인자를 지정 안할 시 시작위치에서부터 문자열 끝까지의 길이가 설정됩니다.
+  ```
 
   - toLowerCase() : 원래 문자열의 문자를 모두 소문자로 바꾼 새 문자열을 반환합니다.
   ```js
