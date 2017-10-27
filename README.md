@@ -95,7 +95,17 @@
  ```
 
 ## 숫자 (Number)
-  - Number()
+  - Number() : 숫자데이터로 변환합니다.
+  ```js
+  > Number('')
+  // 0
+  > Number('123')
+  // 123
+  > Number(false)
+  // 0
+  >Number(true)
+  // 1
+  ```
   - inNaN() : 값이 잘못된 숫자인지 판별합니다.
   ```js
   > isNaN(NaN);
