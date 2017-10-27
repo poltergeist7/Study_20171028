@@ -44,37 +44,11 @@
   // 1
   ```
 
-  - match(*regexp*) : 문자열에서 정규표현식과 일치하는 부분을 찾습니다. *regexp*에 /g 플래그가 없으면 일치하는 첫 번째 것을 반환합니다.
-  ```js
-  '-abb--aaab-'.match(/(a+)b/)
-  ```
-  /g 플래그가 있으면 일치하는 것을 모두 배열에 담아 반환합니다.
-  ```js
-  > '-abb--aaab-'.match(/(a+)b/)
-  [ 'ab',
-  'a',
-  index: 1,
-  input: '-abb--aaab-' ]
-  > 'abba'.match(/a/g)
-  // ['a', 'a']
-  > 'abba'.match(/x/g)      //일치하는 것이 없을 시
-  // null
-  ```
-
   - replace(*search*, *replacement*) : *search*를 찾아 *replacement*로 교체합니다. *search*에는 문자열이나 정규표현식을 쓸 수 있고, *replacement*에는 문자열이나 함수를 쓸 수 있습니다. *search*에 /g 플래그가 없는 정규표현식을 쓰면 일치하는 첫 번째 것만 교체됩니다.
   ```js
   > 'iixxxixx'.replace('i', 'o')
   // 'o/g/gixxixx'
 
-  ```
-  - search(*regexp*) : *regexp*와 일치하는 부분이 있으면 그 첫 번째의 인덱스를, 없으면 -1을 변환합니다.
-  ```js
-  > 'abba'.search(/b/)
-  // 1
-  > 'abba'.search(/x/)
-  // -1
-  > '-yy-xxx-y-'.search(/x+/)
-  // 4
   ```
 
   - slice(*start*, *end*) : *start* 위치에서 시작하고 *end* 바로 앞에서 끝나는 부분 문자열을 반환합니다. 두 매개변수 모두 음수를 쓸 수 있으며, 음수를 쓰면 문자열 길이가 매개변수에 더해집니다.
@@ -93,12 +67,6 @@
   ```js
   > 'a, b,c, d'.split(',')          // 문자열
   //[ 'a', ' b', 'c', ' d' ]
-  > 'a, b,c, d'.split(/,/)          // 정규표현식
-  //[ 'a', ' b', 'c', ' d' ]
-  > 'a, b,c, d'.split(/, */)        // 좀 더 복잡한 정규표현식
-  //[ 'a', 'b', 'c', 'd' ]
-  > 'a, b,c, d'.split(/, */, 2)     // 제한 설정
-  //[ 'a', 'b']
   > 'test'.split()                  // 구분자 없음
   // [ 'test' ]
   ```
