@@ -51,8 +51,8 @@
    ```js
    > 'abc'.slice(2)
    //'c'
-   > 'abc'.slice(1,2)
-   //'b'
+   > 'Apple Mango'.slice(6,11)
+   //'Mango'
    > 'abc'.slice(-2)
    //'bc'
    ```
