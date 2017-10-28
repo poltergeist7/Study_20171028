@@ -255,7 +255,7 @@
   //[ 'c', 'd' ]
   ```
 
-  - sort() : 배열을 정렬해서 반환합니다.
+  - sort() : 배열을 순서대로 정렬해서 반환합니다.
   ```js
   > var arr = [ 'banana', 'apple', 'pear', 'orange'];
   > arr.sort()
