@@ -27,8 +27,8 @@
   ```js
   > 'aXaX'.indexOf('X')
   // 1
-  > 'aXaX'.indexOf('X', 2)
-  // 3
+  > 'Apple Mango'.indexOf('Lemon')
+  // -1
   ```
 
   - lastIndexOf(*serchString*, *position*) : *position*(기본값은 문자열 끝)에서 시작해 *searchString*을 검색합니다. *searchString*을 찾으면 그 위치를, 찾지 못하면 -1을 반환합니다.
