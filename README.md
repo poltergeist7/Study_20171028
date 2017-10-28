@@ -155,7 +155,7 @@
   ```js
   > var number = 0.12345678912345678.toFixed(2);
   > console.log(number);
-  // '0.123'
+  // '0.12'
   > console.log(typeOf(number));
   //'string'
   ```
