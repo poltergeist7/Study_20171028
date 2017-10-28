@@ -129,7 +129,7 @@
   // 99
   > parseInt('168 cm');
   // 168
-  > parseInt('I amm 31');
+  > parseInt('I am 31');
   // NaN
   > parseInt(true);
   // NaN
@@ -145,7 +145,7 @@
   // 99.9
   > parseFloat('168.8 cm');
   // 168.8
-  > parseFloat('I amm 31');
+  > parseFloat('I am 31');
   // NaN
   > parseFloat(true);
   // NaN
