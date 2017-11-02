@@ -29,6 +29,7 @@
   ```
 
   ### indexOf(*serchString*, *position*)
+  Returns: Number
   : *position*(Zero-based)에서 시작해 *searchString*을 찾으면 그 위치를, 찾지 못하면 -1을 반환합니다.
   ```js
   'aXaX'.indexOf('X');      // 1
@@ -36,6 +37,7 @@
   ```
 
   ### lastIndexOf(*serchString*, *position*)
+  Returns: Number
   : *position*(기본값은 문자열 끝)에서 시작해 *searchString*을 검색합니다. *searchString*을 찾으면 그 위치를, 찾지 못하면 -1을 반환합니다.
   ```js
   > 'aXaX'.lastIndexOf('X');        // 3
@@ -43,6 +45,7 @@
   ```
 
   ### replace(*search*, *replacement*)
+  Returns: String
   : *search*를 찾아 *replacement*로 교체합니다. *search*에는 문자열이나 정규표현식을 쓸 수 있고, *replacement*에는 문자열이나 함수를 쓸 수 있습니다.
   ```js
   var str = 'Apple Mango';
@@ -51,7 +54,7 @@
   // 'Lemon Mango'
   ```
 
-  ### slice(*start*, *end*)
+  ### slice(*start*, *end* + 1)
   : *start* 위치에서 시작하고 *end* 바로 앞에서 끝나는 부분 문자열을 반환합니다. 두 매개변수 모두 음수를 쓸 수 있으며, 음수를 쓰면 문자열 길이가 매개변수에 더해집니다.
    ```js
    'abc'.slice(2)       //'c'
