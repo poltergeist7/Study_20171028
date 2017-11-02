@@ -137,16 +137,19 @@
   isNaN('2017/11/02');      //true
   isNaN(undefined);     //true
   ```
+
   ### parseInt()
   : 문자를 해석하여 정수로 반환합니다.
   ```js
   parseInt(1);      // 1
   parseInt('23');     // 23
   parseInt('99.9%');      // 99
-  parseInt('168 cm');     // 168
+  parseInt('168 cm');     // 168     <-'문자 데이터'가 숫자로 시작하는 경우, 중간에 포함된 문자 전까지만 해석합니다.
   parseInt('I am 31');        // NaN
   parseInt(true);     // NaN
+  parseInt(false);      //NaN
   ```
+
   ### parseFloat()
   : 문자열로 변환하고 앞 공백을 잘라낸 뒤, 앞에서부터 부동소수점 숫자로 볼 수 있는 만큼을 떼어 숫자로 바꿉니다. <br>
   부동소수점 숫자로 볼 수 있는 부분이 없으면 NaN을 반환합니다.
