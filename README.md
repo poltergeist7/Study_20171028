@@ -116,9 +116,17 @@
    Number('123');       // 123
    Number(false);        // 0
    Number(true);       // 1
-   Number('22 33');     //NaN
-   Nunber('Hello');     //NaN
+   Number('22 33');     // NaN
+   Number('Hello');     // NaN
+
+   console.log(typeOf Number ('hello'));        //Number
+
+
+   Number('20px');      // NaN
+   parseInt('20px');    // 20
+   parseFloat('20px')       //20
   ```
+  <br>
   ### inNaN()
   : 값이 잘못된 숫자인지 판별합니다.
   ```js
