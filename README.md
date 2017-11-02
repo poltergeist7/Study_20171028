@@ -4,7 +4,8 @@
   - 배열 (Array)
 
 ## 문자 (String)
-  ### charAt(n) : n번째에 있는 문자를 구합니다
+  ### charAt(n)
+  n번째에 있는 문자를 구합니다.
   ```js
   > 'abc'.charAt(1)
   //'b'
