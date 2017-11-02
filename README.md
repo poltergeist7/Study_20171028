@@ -2,6 +2,7 @@
   - 문자 (String)
   - 숫자 (Number)
   - 배열 (Array)
+  - 객체 (Object)
 
 ## 문자 (String)
   ### charAt(n)
