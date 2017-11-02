@@ -126,18 +126,16 @@
    parseInt('20px');    // 20
    parseFloat('20px')       //20
   ```
- 
-  ### inNaN()
+
+  ### isNaN()
   : 값이 잘못된 숫자인지 판별합니다.
   ```js
-  > isNaN(NaN);
-  // true
-  > isNaN(33);
-  // false
-  > isNaN('33');
-  // false
-  > isNaN(true);
-  // false
+  isNaN(NaN);     // true
+  isNaN(33);      // false
+  isNaN('33');        // false
+  isNaN(true);        // false
+  isNaN('2017/11/02');      //true
+  isNaN(undefined);     //true
   ```
   ### parseInt()
   : 문자를 해석하여 정수로 반환합니다.
