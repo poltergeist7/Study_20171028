@@ -119,7 +119,7 @@
    Number('22 33');     // NaN
    Number('Hello');     // NaN
 
-   console.log(typeOf Number ('hello'));        //Number
+   console.log(typeOf Number ('hello'));   //Number
 
 
    Number('20px');      // NaN
@@ -140,35 +140,23 @@
   ### parseInt()
   : 문자를 해석하여 정수로 반환합니다.
   ```js
-  > parseInt(1);
-  // 1
-  > parseInt('23');
-  // 23
-  > parseInt('99.9%');
-  // 99
-  > parseInt('168 cm');
-  // 168
-  > parseInt('I am 31');
-  // NaN
-  > parseInt(true);
-  // NaN
+  parseInt(1);      // 1
+  parseInt('23');     // 23
+  parseInt('99.9%');      // 99
+  parseInt('168 cm');     // 168
+  parseInt('I am 31');        // NaN
+  parseInt(true);     // NaN
   ```
   ### parseFloat()
   : 문자열로 변환하고 앞 공백을 잘라낸 뒤, 앞에서부터 부동소수점 숫자로 볼 수 있는 만큼을 떼어 숫자로 바꿉니다. <br>
   부동소수점 숫자로 볼 수 있는 부분이 없으면 NaN을 반환합니다.
   ```js
-  > parseFloat(1);
-  // 1
-  > parseFloat('23');
-  // 23
-  > parseFloat('99.9%');
-  // 99.9
-  > parseFloat('168.8 cm');
-  // 168.8
-  > parseFloat('I am 31');
-  // NaN
-  > parseFloat(true);
-  // NaN
+  parseFloat(1);        // 1
+  parseFloat('23');       // 23
+  parseFloat('99.9%');        // 99.9
+  parseFloat('168.8 cm');     // 168.8
+  parseFloat('I am 31');      // NaN
+  parseFloat(true);       // NaN
   ```
 
   ### .toFixed()
