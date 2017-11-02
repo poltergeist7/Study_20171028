@@ -126,7 +126,7 @@
    parseInt('20px');    // 20
    parseFloat('20px')       //20
   ```
-  <br>
+ 
   ### inNaN()
   : 값이 잘못된 숫자인지 판별합니다.
   ```js
