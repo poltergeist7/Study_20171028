@@ -314,3 +314,13 @@
   > arr
   //['a', 'b', 'c', 'd']
   ```
+  
+## 객체 (Object)
+   : 자바스크립트의 거의 모든 것은 객체입니다. (기본 데이터 타입인 boolean, number, string, null, undefined 를 제외) <br>
+   객체는 단순히 데이터를 일컫는데, 여기서 데이터는 properties(성질 - 객체에 연관 되어있는 값)이 될 수도 있고, methods(메소드 - 객체가 어떠한 행동을 하도록 시킴)가 될 수도 있습니다.
+
+   -ex) 객체의 예시
+   
+   | 객체 | Properties(성질) | method(메소드) |
+   |:-------------:|:-------------:|:-----:|
+   |이미지|car.name = Audi <br> car.model = A8 <br> car.color = red <br> car.door = 4 | car.start() <br> car.drive() <br> car.break() <br> car.stop() |
