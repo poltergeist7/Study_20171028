@@ -317,7 +317,7 @@
   ```
   
 ## 객체 (Object)
-   : 자바스크립트의 거의 모든 것은 객체입니다. (기본 데이터 타입인 boolean, number, string, null, undefined 를 제외) 
+   : 자바스크립트의 거의 모든 것은 객체입니다. (기본 데이터 타입인 boolean, number, string, null, undefined 를 제외)
 
   > 그러면 배열의 자료형은 무엇일까?
   ```js
@@ -367,23 +367,21 @@
 
    ### 속성(property)과 메소드(method)
 
-    ```js
-    > var Obj = {
-        number : 852,
-        string : 'HELLO',
-        boolean : true,
-        array : [1, 2, 3, 4],
-        method : function(){
-    }
-    };
-    ```
+   ```js
+   > var Obj = {
+       number : 852,
+       string : 'HELLO',
+       boolean : true,
+       array : [1, 2, 3, 4],
+       method : function(){
+   }
+   };
+   ```
 
-    ### this
-    : 메소드 내의 속성을 출력할 때, 자신의 속성을 분명히 표시해야 합니다. 이 때 this 키워드를 사용합니다.
-
-    ```js
-
-    ```
+   ### this
+   : 메소드 내의 속성을 출력할 때, 자신의 속성을 분명히 표시해야 합니다. 이 때 this 키워드를 사용합니다.
+   ```js
+   ```
 
    | 객체 | Properties(성질) | method(메소드) |
    |:-------------:|:-------------|:-------------|
