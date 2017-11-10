@@ -182,6 +182,7 @@
 
 
 ## 배열 (Array)
+
   ### concat(*arr1*, *arr2*, ...)
   : 수신자의 모든 요소 다음에 *arr1*의 모든 요소, 다음에 arr2의 모든 요소, 이런식으로 이어지는 새 배열을 만듭니다. 매개변수가 배열이 아니면 요소로 추가됩니다.
   ```js
@@ -319,8 +320,17 @@
    : 자바스크립트의 거의 모든 것은 객체입니다. (기본 데이터 타입인 boolean, number, string, null, undefined 를 제외) <br>
    객체는 단순히 데이터를 일컫는데, 여기서 데이터는 properties(성질 - 객체에 연관 되어있는 값)이 될 수도 있고, methods(메소드 - 객체가 어떠한 행동을 하도록 시킴)가 될 수도 있습니다.
 
+  > 그러면 배열의 자료형은 무엇일까?
+  ```js
+  > typeOf([]);
+  // "object"
+  ```
+
    -ex) 객체의 예시
+  ```js
+
+  ```
    
    | 객체 | Properties(성질) | method(메소드) |
-   |:-------------:|:-------------:|:-----:|
+   |:-------------:|:-------------|:-------------|
    |이미지|car.name = Audi <br> car.model = A8 <br> car.color = red <br> car.door = 4 | car.start() <br> car.drive() <br> car.break() <br> car.stop() |
