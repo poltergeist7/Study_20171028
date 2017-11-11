@@ -350,9 +350,9 @@
 
   ```js
     person['firstName']      // "Eunjung"
-    product['lastName']      // "Song"
-    product.age              // 31
-    product.eyeColor         // 'Brown'
+    person['lastName']      // "Song"
+    person.age              // 31
+    person.eyeColor         // 'Brown'
   ```
    > 식별자가 아닌 문자를 키로 정의했을 때는 무조건 대괄호를 사용해야 객체의 요소에 접근할 수 있습니다.
 
