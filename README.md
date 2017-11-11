@@ -338,7 +338,7 @@
         eyeColor : "Brown"
     };
       > console.log(person);
-   // object[Object]{
+   //  object[Object]{
    //  age: 31,
    //  eyeColor: "Brown",
    //  firstName: "Eunjung",
