@@ -443,7 +443,8 @@
    |:-------------:|:----------------|:----------------|
    |![이미지](https://www.w3schools.com/js/objectExplained.gif) | car.name = Fiat <br> car.model = 800 <br> car.color = white <br> car.door = 2 | car.start() <br> car.drive() <br> car.break() <br> car.stop() |
 
-   > 모든 자동차의 properties(성질)은 같지만 그에 해당하는 값은 다르다.
+   > 모든 자동차의 properties(성질)은 같지만 그에 해당하는 값은 다르다. <br>
+
    > 모든 자동차는 같은 method(메소드)를 가지고 있지만 동작하는 방법은 다르다.
 
    ```js
