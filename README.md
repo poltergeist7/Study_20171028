@@ -282,9 +282,7 @@
   ```js
   > var arr = [ 'banana', 'apple', 'fig', 'orange'];
   > arr.sort()
-  //[ 'apple', 'fig', 'banana', 'orange']
-  > arr // 정렬됨
-  //[ 'apple', 'fig', 'banana', 'orange',]
+  //[ 'apple', 'banana', 'fig', 'orange']
   ```
   > 정렬할 때는 값을 문자열로 비교하므로 숫자는 정확히 정렬되지 않을 수 있습니다.
 
