@@ -280,11 +280,11 @@
   ### sort()
   : 배열을 순서대로 정렬해서 반환합니다.
   ```js
-  > var arr = [ 'banana', 'apple', 'pear', 'orange'];
+  > var arr = [ 'banana', 'apple', 'fig', 'orange'];
   > arr.sort()
-  //[ 'apple', 'banana', 'orange', 'pear']
+  //[ 'apple', 'fig', 'banana', 'orange']
   > arr // 정렬됨
-  //[ 'apple', 'banana', 'orange', 'pear']
+  //[ 'apple', 'fig', 'banana', 'orange',]
   ```
   > 정렬할 때는 값을 문자열로 비교하므로 숫자는 정확히 정렬되지 않을 수 있습니다.
 
