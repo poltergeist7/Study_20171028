@@ -287,7 +287,7 @@
   > 정렬할 때는 값을 문자열로 비교하므로 숫자는 정확히 정렬되지 않을 수 있습니다.
 
   ### splice( *start*, *deleteCount*, *elem1*, *elem2*, ...)
-  : *start* 에서 시작해 *deleteCount* 만큼 제거한 후 지정된 요소를 삽입합니다. ## *start* 위치에 있는 요소를 *elem1*으로, 그 다음 요소를 *elem2*로, 이런 식으로 *deleteCount* 만큼 교체합니다. 
+  : *start* 에서 시작해 *deleteCount* 만큼 제거한 후 지정된 요소를 삽입합니다. ## *start* 위치에 있는 요소를 *elem1*으로, 그 다음 요소를 *elem2*로, 이런 식으로 *deleteCount* 만큼 교체합니다.
   ```js
   > var arr = [ 'a', 'b', 'c', 'd'];
   > arr.splice(1, 2, 'x');
@@ -309,10 +309,10 @@
   : 지정된 요소를 배열 맨 앞에 추가하고 새 길이를 반환합니다.
   ```js
   > var arr = ['c', 'd'];
-  > arr.unshift('a', 'b')
+  > arr.unshift('a', 'e')
   //4
   > arr
-  //['a', 'b', 'c', 'd']
+  //['a', 'e', 'c', 'd']
   ```
   
 ## 객체 (Object)
