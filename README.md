@@ -370,9 +370,9 @@
    :성질(property) - 객체에 연관 되어있는 값 <br>
     메소드 - 객체가 어떠한 행동을 하도록 시킴(동사)
 
-    | 객체 | Properties(성질) | method(메소드) |
-    |:-------------:|:-------------|:-------------|
-    |![이미지](https://www.w3schools.com/js/objectExplained.gif)|car.name = Audi <br> car.model = A8 <br> car.color = red <br> car.door = 4 | car.start() <br> car.drive() <br> car.break() <br> car.stop() |
+   | 객체 | Properties(성질) | method(메소드) |
+   |:-------------:|:-------------|:-------------|
+   |![이미지](https://www.w3schools.com/js/objectExplained.gif)|car.name = Audi <br> car.model = A8 <br> car.color = red <br> car.door = 4 | car.start() <br> car.drive() <br> car.break() <br> car.stop() |
 
    ```js
    > var Obj = {
