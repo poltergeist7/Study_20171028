@@ -331,18 +331,18 @@
    **var 객체이름 = {키1: 값1, 키2: 값2, 키3: 값3... 키4:값4};**
 
   ```js
-   > var product = {
-        제품명 : '7D 건조 망고',
-        유형 : '당절임',
-        성분 : '망고, 설탕, 메타중아호아산나트륨, 치자황색소소',
-        원산지 : '필리핀'
+   > var person = {
+        firstName : "Eunjung'"
+        lastName : "Song"
+        age : 31,
+        eyeColor : "Brown"
     };
-      > console.log(product);
+      > console.log(person);
    // object[Object]{
-   //  성분:"망고, 설탕, 메타중아호아산나트륨, 치자황색소"
-   //  원산지: "필리핀"
-   //  유형: "당절임"
-   //  제품명: "7D 건조망고"
+   //  age: 31,
+   //  eyeColor: "Brown",
+   //  firstName: "Eunjung",
+   //  lastName: "Song"
   ```
   객체의 키를 인덱스로, 객체의 속성을 배열의 요소와 비교할 수 있습니다.
 
@@ -367,7 +367,7 @@
 
 
    ### 속성(property)과 메소드(method)
-   :속성(property) - 객체에 연관 되어있는 값 <br>
+   : 속성(property) - 객체에 연관 되어있는 값 <br>
     메소드(method) - 객체가 어떠한 행동을 하도록 시킴(동사)
 
    | 객체 | Properties(속성) | method(메소드) |
